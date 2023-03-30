@@ -5,22 +5,18 @@ This project uses an exponential regression model to analyze the relationship be
 Based on an initial analysis of the data, it appears that the relationship between Previous Spending and Revenue Growth is non-linear. Therefore, an exponential regression model was chosen as a potential model for the data.
 
 ## Model Description
- The exponential regression model assumes that the relationship between the dependent variable (Revenue_Growth) and the independent variable (Previous_Spending) is of the form:
 
-\begin{equation}
-\text{y} = a \cdot e^{b \cdot \text{x}}
-\end{equation}
+The exponential regression model used in this project assumes that the relationship between the dependent variable (Revenue Growth) and the independent variable (Previous Spending) can be described by the following formula:
+
+Revenue_Growth = a * exp(b * Previous_Spending)
+
 
 where 
 
-Revenue_Growth is represented by 'y'\
-Previous_Spending is represented by 'x'\
-'a' and 'b' are where a and b are parameters to be estimated from the data.\
+where a and b are parameters to be estimated from the data. The log transformation is used to linearize the model:
 
 The log transformation is used to linearize the model:
 
-\begin{equation}
-\log(x) = \log(a) + b \cdot x
-\end{equation}
+log(Revenue_Growth) = log(a) + b * Previous_Spending
 
 The regression coefficients estimated by the model are in the log scale, so we need to transform them back to the original scale by taking the exponent of the coefficients.
