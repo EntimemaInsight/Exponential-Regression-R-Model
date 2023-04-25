@@ -27,3 +27,7 @@ The data set used in this analysis consists of Previous Spending and Revenue Gro
 The relationship between Previous Spending (independent variable) and Revenue Growth (dependent variable) is non-linear, and that an exponential regression model may be a better fit for the data than a linear regression model.
 
 The exponential regression model assumes that the majority of the points are concentrated near the beginning of the axis. This suggests that there is a strong relationship between Previous Spending and Revenue Growth at lower levels of spending, but this relationship weakens or becomes less clear as spending levels increase, which is characteristic of an exponential relationship. It's important to note that other types of non-linear relationships may also exist between the two variables, and it's possible that a different type of non-linear regression model may be a better fit for the data. Therefore, it's important to consider multiple types of non-linear regression models, and choose the model that best fits the data based on criteria such as goodness of fit measures and interpretability.
+
+## Credits
+
+This project was created by Aleksandar Dimitrov and is licensed under the MIT License.
